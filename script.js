@@ -42,21 +42,21 @@ document.getElementById('registrationForm').addEventListener('submit', function(
         if (province === 'limpopo') {
             provinceURL = 'provinces/limpopo.html';
         } else if (province === 'northwest') {
-            provinceURL = 'northwest.html';
+            provinceURL = 'provinces/northwest.html';
         } else if (province === 'easterncape') {
-            provinceURL = 'easterncape.html';
+            provinceURL = 'provinces/easterncape.html';
         } else if (province === 'freestate') {
-            provinceURL = 'freestate.html';
+            provinceURL = 'provinces/freestate.html';
         } else if (province === 'gauteng') {
-            provinceURL = 'gauteng.html';
+            provinceURL = 'provinces/gauteng.html';
         } else if (province === 'kwazulunatal') {
-            provinceURL = 'kwazulunatal.html';
+            provinceURL = 'provinces/kwazulunatal.html';
         } else if (province === 'mpumalanga') {
-            provinceURL = 'mpumalanga.html';
+            provinceURL = 'provinces/mpumalanga.html';
         } else if (province === 'northerncape') {
-            provinceURL = 'northerncape.html';
+            provinceURL = 'provinces/northerncape.html';
         } else if (province === 'westerncape') {
-            provinceURL = 'westerncape.html';
+            provinceURL = 'provinces/westerncape.html';
         }
 
         // Redirect to the corresponding HTML page
