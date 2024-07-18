@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Women in Agriculture</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="navbar">
+    <a href="#" class="active">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="courses.html">Courses</a>
+</div>
+
+<div class="hero-section">
+    <img src="images/women.jpg" alt="Women in Agriculture" class="hero-image">
+    <div class="hero-text">
+        <h1>Women in Agriculture: Cultivating Hope, Bridging Gaps, Transforming Lives.</h1>
+        <button id="registerButton">Register to Enroll</button>
+        <button>Donate</button>
+        <button>Learn More</button>
+    </div>
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Register to Enroll</h2>
+        <form id="registrationForm">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="idNumber">ID Number:</label><br>
+            <input type="text" id="idNumber" name="idNumber" required><br><br>
+
+            <label for="province">Select Province:</label><br>
+            <select id="province" name="province" required>
+                <option value="">--Select a Province--</option>
+                <option value="limpopo">Limpopo</option>
+                <option value="northwest">North West</option>
+                <option value="easterncape">Eastern Cape</option>
+                <option value="freestate">Free State</option>
+                <option value="gauteng">Gauteng</option>
+                <option value="kwazulunatal">KwaZulu-Natal</option>
+                <option value="mpumalanga">Mpumalanga</option>
+                <option value="northerncape">Northern Cape</option>
+                <option value="westerncape">Western Cape</option>
+            </select><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="error-message" style="color:red;"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
