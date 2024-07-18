@@ -36,12 +36,12 @@ body, html {
 
 .hero-image {
     width: 100%;
-    height: auto;
+    height: 609px;
 }
 
 .hero-text {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -56,14 +56,16 @@ body, html {
     padding: 10px 20px;
     margin: 10px;
     border: none;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(2, 2, 2);
     font-size: 1em;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .hero-text button:hover {
-    background-color: #45a049;
+    background-color: #38ce3f;
+    color: #ffffff;
 }
 
 /* Modal styles */
