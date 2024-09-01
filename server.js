@@ -1,5 +1,3 @@
-// server.js
-
 const express = require('express');
 const db = require('./database'); // Import the SQLite database connection
 const path = require('path');
@@ -9,15 +7,15 @@ const port = 3000;
 const cors = require('cors');
 app.use(cors());
 
-
 // Middleware to parse JSON and URL-encoded data
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Serve static files from the 'Donor' directory
+app.use('/Donor', express.static(path.join(__dirname, 'Donor')));
+
 // Serve static files (e.g., HTML, CSS, JS) from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
-
-
 
 // Route to handle donation submissions
 app.post('/submit_donation', (req, res) => {
@@ -49,7 +47,8 @@ app.post('/submit_donation', (req, res) => {
       res.status(500).json({ error: err.message });
       return;
     }
-    res.json({ message: 'Donation added successfully', donationId: this.lastID });
+    // Redirect to success page in the 'Donor' folder
+    res.redirect('/Donor/success.html');
   });
 });
 
@@ -57,3 +56,5 @@ app.post('/submit_donation', (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
+
+// To start the server "node server.js"

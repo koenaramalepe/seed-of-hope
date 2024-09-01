@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kind Heart Charity - Donation</title>
+    <title>Seed Of Hope</title>
 
     <!-- CSS FILES -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -44,29 +44,57 @@
                                     </div>
                                 </div>
 
-                                <!-- Type of Donation -->
-                                <div class="col-lg-12 col-12">
-                                    <h5 class="mt-2 mb-3">Select Type of Donation</h5>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-6 form-check-group">
+                                <!-- Donation Type -->
+                                <div class="col-lg-3 col-md-6 col-6 form-check-group">
                                     <div class="form-check form-check-radio">
-                                        <input class="form-check-input" type="radio" name="donationType" id="donationTypeFood" value="Food" onchange="showFoodDetails(this)">
+                                        <input class="form-check-input" type="radio" name="donationType" id="donationTypeFood" value="Food" onchange="toggleFoodDetails(this);">
                                         <label class="form-check-label" for="donationTypeFood">Food</label>
                                     </div>
                                 </div>
-                                <div class="col-lg-4 col-md-6 col-6 form-check-group">
+
+                                <div class="col-lg-3 col-md-6 col-6 form-check-group">
                                     <div class="form-check form-check-radio">
-                                        <input class="form-check-input" type="radio" name="donationType" id="donationTypeClothes" value="Clothes" onchange="hideFoodDetails()">
+                                        <input class="form-check-input" type="radio" name="donationType" id="donationTypeClothes" value="Clothes" onchange="toggleFoodDetails(this);">
                                         <label class="form-check-label" for="donationTypeClothes">Clothes</label>
                                     </div>
                                 </div>
-                                <!-- Additional donation types... -->
-                                <div class="col-lg-4 col-md-6 col-6 form-check-group">
+
+                                <div class="col-lg-3 col-md-6 col-6 form-check-group">
                                     <div class="form-check form-check-radio">
-                                        <input class="form-check-input" type="radio" name="donationType" id="donationTypeOther" value="Other" onchange="hideFoodDetails()">
-                                        <label class="form-check-label" for="donationTypeOther">Other</label>
+                                        <input class="form-check-input" type="radio" name="donationType" id="donationTypeToiletries" value="Toiletries" onchange="toggleFoodDetails(this);">
+                                        <label class="form-check-label" for="donationTypeToiletries">Toiletries</label>
                                     </div>
                                 </div>
+
+                                <div class="col-lg-3 col-md-6 col-6 form-check-group">
+                                    <div class="form-check form-check-radio">
+                                        <input class="form-check-input" type="radio" name="donationType" id="donationTypeSeeds" value="Seeds" onchange="toggleFoodDetails(this);">
+                                        <label class="form-check-label" for="donationTypeSeeds">Seeds</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-6 form-check-group">
+                                    <div class="form-check form-check-radio">
+                                        <input class="form-check-input" type="radio" name="donationType" id="donationTypeTools" value="Tools" onchange="toggleFoodDetails(this);">
+                                        <label class="form-check-label" for="donationTypeTools">Tools</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-6 form-check-group">
+                                    <div class="form-check form-check-radio">
+                                        <input class="form-check-input" type="radio" name="donationType" id="donationTypeMoney" value="Money" onchange="toggleFoodDetails(this);">
+                                        <label class="form-check-label" for="donationTypeMoney">Money</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-12 form-check-group">
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon1">Other</span>
+                                        <input type="text" class="form-control" placeholder="Donation Type" aria-label="Donation Type" aria-describedby="basic-addon1" name="donationTypeOther">
+                                    </div>
+                                </div>
+
+                                <!-- Food Details -->
                                 <div class="col-lg-12 col-12 form-check-group" id="foodDetails" style="display: none;">
                                     <h5 class="mt-2">Food Details</h5>
                                     <div class="form-check">
@@ -110,8 +138,8 @@
                                 </div>
                                 <div class="col-lg-4 col-4">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="donorType" id="donorTypeBakery" value="Bakery">
-                                        <label class="form-check-label" for="donorTypeBakery">Bakery</label>
+                                        <input class="form-check-input" type="radio" name="donorType" id="donorTypeOrganisation" value="Organisation">
+                                        <label class="form-check-label" for="donorTypeOrganisation">Organisation</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 col-4">
@@ -143,15 +171,12 @@
 
     <!-- Custom JavaScript -->
     <script>
-        // Show or hide food details based on the donation type
-        function showFoodDetails(element) {
+        function toggleFoodDetails(element) {
             if (element.value === 'Food') {
                 document.getElementById('foodDetails').style.display = 'block';
+            } else {
+                document.getElementById('foodDetails').style.display = 'none';
             }
-        }
-
-        function hideFoodDetails() {
-            document.getElementById('foodDetails').style.display = 'none';
         }
     </script>
 </body>
