@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture Courses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Agriculture Courses</h1>
+        </header>
+        
+        <section id="course-selection">
+            <h2>Choose Your Location</h2>
+            <div class="location-selection">
+                <label for="province">Province:</label>
+                <select id="province" name="province" onchange="populateMunicipalities()">
+                    <option value="">Select a Province</option>
+                    <option value="limpopo">Limpopo</option>
+                    <option value="gauteng">Gauteng</option>
+                </select>
+
+                <label for="municipality">Local Municipality:</label>
+                <select id="municipality" name="municipality">
+                    <option value="">Select a Municipality</option>
+                </select>
+
+                <button id="get-crops">Get Suggested Crops</button>
+            </div>
+        </section>
+
+        <section id="courses">
+            <div class="course" id="types-of-crops">
+                <h2>Types of Crops to Grow</h2>
+                <p id="crop-suggestions">Please select your location to get crop suggestions.</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

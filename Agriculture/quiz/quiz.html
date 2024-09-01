@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maize Quiz</title>
+    <link rel="stylesheet" href="quiz-styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Maize Quiz</h1>
+        <p>Test your knowledge about maize!</p>
+    </header>
+
+    <main>
+        <form id="quizForm">
+            <div class="quiz-question">
+                <h3>1. What is the scientific name for maize?</h3>
+                <label>
+                    <input type="radio" name="q1" value="Zea mays"> Zea mays
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="Triticum aestivum"> Triticum aestivum
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="Hordeum vulgare"> Hordeum vulgare
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="Solanum tuberosum"> Solanum tuberosum
+                </label>
+            </div>
+
+            <div class="quiz-question">
+                <h3>2. What part of the maize plant is consumed as food?</h3>
+                <label>
+                    <input type="radio" name="q2" value="Roots"> Roots
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="Leaves"> Leaves
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="Cobs"> Cobs
+                </label>
+                <label>
+                    <input type="radio" name="q2" value="Stems"> Stems
+                </label>
+            </div>
+
+            <div class="quiz-question">
+                <h3>3. Which country is the largest producer of maize in the world?</h3>
+                <label>
+                    <input type="radio" name="q3" value="Brazil"> Brazil
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="China"> China
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="United States"> United States
+                </label>
+                <label>
+                    <input type="radio" name="q3" value="India"> India
+                </label>
+            </div>
+
+            <div class="quiz-question">
+                <h3>4. Maize is primarily used for which of the following?</h3>
+                <label>
+                    <input type="radio" name="q4" value="Fuel"> Fuel
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="Textiles"> Textiles
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="Food"> Food
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="Construction"> Construction
+                </label>
+            </div>
+
+            <div class="quiz-question">
+                <h3>5. How many calories are in a 100-gram serving of maize?</h3>
+                <label>
+                    <input type="radio" name="q5" value="30 calories"> 30 calories
+                </label>
+                <label>
+                    <input type="radio" name="q5" value="50 calories"> 50 calories
+                </label>
+                <label>
+                    <input type="radio" name="q5" value="86 calories"> 86 calories
+                </label>
+                <label>
+                    <input type="radio" name="q5" value="120 calories"> 120 calories
+                </label>
+            </div>
+
+            <div class="quiz-question">
+                <h3>6. What is the ideal soil pH for growing maize?</h3>
+                <label>
+                    <input type="radio" name="q6" value="4.0 to 5.0"> 4.0 to 5.0
+                </label>
+                <label>
+                    <input type="radio" name="q6" value="5.5 to 6.5"> 5.5 to 6.5
+                </label>
+                <label>
+                    <input type="radio" name="q6" value="6.0 to 7.0"> 6.0 to 7.0
+                </label>
+                <label>
+                    <input type="radio" name="q6" value="7.5 to 8.5"> 7.5 to 8.5
+                </label>
+            </div>
+
+            <div class="quiz-question">
+                <h3>7. How long does it typically take for maize to mature from planting to harvest?</h3>
+                <label>
+                    <input type="radio" name="q7" value="60-80 days"> 60-80 days
+                </label>
+                <label>
+                    <input type="radio" name="q7" value="90-100 days"> 90-100 days
+                </label>
+                <label>
+                    <input type="radio" name="q7" value="110-120 days"> 110-120 days
+                </label>
+                <label>
+                    <input type="radio" name="q7" value="130-140 days"> 130-140 days
+                </label>
+            </div>
+
+            <div class="quiz-question">
+                <h3>8. Which part of the maize plant helps in pollination?</h3>
+                <label>
+                    <input type="radio" name="q8" value="Roots"> Roots
+                </label>
+                <label>
+                    <input type="radio" name="q8" value="Cobs"> Cobs
+                </label>
+                <label>
+                    <input type="radio" name="q8" value="Tassels"> Tassels
+                </label>
+                <label>
+                    <input type="radio" name="q8" value="Leaves"> Leaves
+                </label>
+            </div>
+
+            <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+        </form>
+
+        <div id="quizResult"></div>
+        <div id="certificate" style="display:none;">
+            <h2>Congratulations!</h2>
+            <p>You have passed the quiz with a score of 75% or above.</p>
+            <p><strong>Certificate of Achievement</strong></p>
+            <p>Issued to: <span id="userName">Participant</span></p>
+            <p>Date: <span id="currentDate"></span></p>
+        </div>
+
+        <div id="quizResult"></div>
+        <div id="certificate" style="display:none;">
+            <h2>Congratulations!</h2>
+            <p>You have passed the quiz with a score of 75% or above.</p>
+            <p><strong>Certificate of Achievement</strong></p>
+            <p>Issued to: <span id="userName">Participant</span></p>
+            <p>Date: <span id="currentDate"></span></p>
+        </div>
+
+        <div id="retakePrompt" style="display:none;">
+            <p>Sorry, you did not pass this time. Would you like to try again?</p>
+            <button onclick="retakeQuiz()">Retake Quiz</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Maize Quiz. All rights reserved.</p>
+    </footer>
+
+    <script src="quiz-scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,431 @@
+{
+    "provinces": [
+      {
+        "name": "Gauteng",
+        "municipalities": [
+          {
+            "name": "City of Johannesburg",
+            "climate": {
+              "average_temperature": "16.7°C",
+              "average_rainfall": "713 mm",
+              "humidity": "60%"
+            },
+            "suggested_crops": [
+              "Potatoes",    
+              "Spinach"       
+            ]
+          },
+          {
+            "name": "City of Tshwane",
+            "climate": {
+              "average_temperature": "18.7°C",
+              "average_rainfall": "670 mm",
+              "humidity": "58%"
+            },
+            "suggested_crops": [
+              "Maize",        
+              "Tomatoes"      
+            ]
+          },
+          {
+            "name": "Ekurhuleni",
+            "climate": {
+              "average_temperature": "17.5°C",
+              "average_rainfall": "720 mm",
+              "humidity": "62%"
+            },
+            "suggested_crops": [
+              "Potatoes",    
+              "Carrots"       
+            ]
+          },
+          {
+            "name": "Emfuleni",
+            "climate": {
+              "average_temperature": "19.0°C",
+              "average_rainfall": "750 mm",
+              "humidity": "65%"
+            },
+            "suggested_crops": [
+              "Maize",       
+              "Beetroot"     
+            ]
+          },
+          {
+            "name": "Lesedi",
+            "climate": {
+              "average_temperature": "18.0°C",
+              "average_rainfall": "680 mm",
+              "humidity": "60%"
+            },
+            "suggested_crops": [
+              "Sweet Potatoes", 
+              "Onions"        
+            ]
+          },
+          {
+            "name": "Merafong City",
+            "climate": {
+              "average_temperature": "17.8°C",
+              "average_rainfall": "690 mm",
+              "humidity": "63%"
+            },
+            "suggested_crops": [
+              "Potatoes",     
+              "Peppers"       
+            ]
+          },
+          {
+            "name": "Midvaal",
+            "climate": {
+              "average_temperature": "18.5°C",
+              "average_rainfall": "710 mm",
+              "humidity": "61%"
+            },
+            "suggested_crops": [
+              "Maize",        
+              "Tomatoes"     
+            ]
+          },
+          {
+            "name": "Mogale City",
+            "climate": {
+              "average_temperature": "17.0°C",
+              "average_rainfall": "725 mm",
+              "humidity": "64%"
+            },
+            "suggested_crops": [
+              "Potatoes",    
+              "Spinach"       
+            ]
+          },
+          {
+            "name": "Rand West City",
+            "climate": {
+              "average_temperature": "18.3°C",
+              "average_rainfall": "705 mm",
+              "humidity": "62%"
+            },
+            "suggested_crops": [
+              "Maize",       
+              "Carrots"     
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Western Cape",
+        "municipalities": [
+          {
+            "name": "Cape Town",
+            "climate": {
+              "average_temperature": "17.5°C",
+              "average_rainfall": "515 mm",
+              "humidity": "75%"
+            },
+            "suggested_crops": [
+              "Grapes",       
+              "Lettuce"    
+            ]
+          },
+          {
+            "name": "Stellenbosch",
+            "climate": {
+              "average_temperature": "18.2°C",
+              "average_rainfall": "660 mm",
+              "humidity": "72%"
+            },
+            "suggested_crops": [
+              "Wheat",       
+              "Apples"       
+            ]
+          }
+        ]
+      },
+      {
+        "name": "KwaZulu-Natal",
+        "municipalities": [
+          {
+            "name": "eThekwini",
+            "climate": {
+              "average_temperature": "21.0°C",
+              "average_rainfall": "1009 mm",
+              "humidity": "80%"
+            },
+            "suggested_crops": [
+              "Sugarcane",    
+              "Avocados"      
+            ]
+          },
+          {
+            "name": "uMhlathuze",
+            "climate": {
+              "average_temperature": "22.0°C",
+              "average_rainfall": "1200 mm",
+              "humidity": "85%"
+            },
+            "suggested_crops": [
+              "Maize",        
+              "Pineapples"    
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Limpopo",
+        "municipalities": [
+          {
+            "name": "Polokwane",
+            "climate": {
+              "average_temperature": "19.5°C",
+              "average_rainfall": "495 mm",
+              "humidity": "65%"
+            },
+            "suggested_crops": [
+              "Sweet Potatoes", 
+              "Peppers"         
+            ]
+          },
+          {
+            "name": "Makhado",
+            "climate": {
+              "average_temperature": "20.0°C",
+              "average_rainfall": "540 mm",
+              "humidity": "70%"
+            },
+            "suggested_crops": [
+              "Citrus",       
+              "Groundnuts"    
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Eastern Cape",
+        "municipalities": [
+          {
+            "name": "Buffalo City",
+            "climate": {
+              "average_temperature": "18.0°C",
+              "average_rainfall": "850 mm",
+              "humidity": "75%"
+            },
+            "suggested_crops": [
+              "Maize",      
+              "Carrots"    
+            ]
+          },
+          {
+            "name": "Nelson Mandela Bay",
+            "climate": {
+              "average_temperature": "17.8°C",
+              "average_rainfall": "600 mm",
+              "humidity": "70%"
+            },
+            "suggested_crops": [
+              "Lettuce",     
+              "Onions"        
+            ]
+          }
+        ]
+      },
+      {
+        "name": "North West",
+        "municipalities": [
+          {
+            "name": "Bojanala Platinum",
+            "climate": {
+              "average_temperature": "20.0°C",
+              "average_rainfall": "580 mm",
+              "humidity": "68%"
+            },
+            "suggested_crops": [
+              "Maize",        
+              "Pumpkins"    
+            ]
+          },
+          {
+            "name": "City of Matlosana",
+            "climate": {
+              "average_temperature": "21.5°C",
+              "average_rainfall": "550 mm",
+              "humidity": "70%"
+            },
+            "suggested_crops": [
+              "Wheat",        
+              "Beans"        
+            ]
+          },
+          {
+            "name": "Ditsobotla",
+            "climate": {
+              "average_temperature": "19.8°C",
+              "average_rainfall": "590 mm",
+              "humidity": "65%"
+            },
+            "suggested_crops": [
+              "Maize",        
+              "Squash"        
+            ]
+          },
+          {
+            "name": "Dr Kenneth Kaunda",
+            "climate": {
+              "average_temperature": "20.5°C",
+              "average_rainfall": "600 mm",
+              "humidity": "66%"
+            },
+            "suggested_crops": [
+              "Sweet Potatoes", 
+              "Cabbage"         
+            ]
+          },
+          {
+            "name": "Dr Ruth Segomotsi Mompati",
+            "climate": {
+              "average_temperature": "21.0°C",
+              "average_rainfall": "570 mm",
+              "humidity": "62%"
+            },
+            "suggested_crops": [
+              "Maize",        
+              "Chili Peppers" 
+            ]
+          },
+          {
+            "name": "JB Marks",
+            "climate": {
+              "average_temperature": "19.0°C",
+              "average_rainfall": "560 mm",
+              "humidity": "64%"
+            },
+            "suggested_crops": [
+              "Potatoes",    
+              "Tomatoes"      
+            ]
+          },
+          {
+            "name": "Kgetlengrivier",
+            "climate": {
+              "average_temperature": "20.2°C",
+              "average_rainfall": "580 mm",
+              "humidity": "67%"
+            },
+            "suggested_crops": [
+              "Maize",       
+              "Zucchini"      
+            ]
+          },
+          {
+            "name": "Lekwa-Teemane",
+            "climate": {
+              "average_temperature": "19.5°C",
+              "average_rainfall": "590 mm",
+              "humidity": "66%"
+            },
+            "suggested_crops": [
+              "Potatoes",     
+              "Spinach"     
+            ]
+          },
+          {
+            "name": "Madibeng",
+            "climate": {
+              "average_temperature": "20.0°C",
+              "average_rainfall": "600 mm",
+              "humidity": "65%"
+            },
+            "suggested_crops": [
+              "Maize",        
+              "Peppers"      
+            ]
+          },
+          {
+            "name": "Mamusa",
+            "climate": {
+              "average_temperature": "21.2°C",
+              "average_rainfall": "570 mm",
+              "humidity": "63%"
+            },
+            "suggested_crops": [
+              "Wheat",      
+              "Beans"         
+            ]
+          },
+          {
+            "name": "Moses Kotane",
+            "climate": {
+              "average_temperature": "20.8°C",
+              "average_rainfall": "580 mm",
+              "humidity": "64%"
+            },
+            "suggested_crops": [
+              "Sweet Potatoes", 
+              "Onions"          
+            ]
+          },
+          {
+            "name": "Naledi",
+            "climate": {
+              "average_temperature": "19.7°C",
+              "average_rainfall": "550 mm",
+              "humidity": "62%"
+            },
+            "suggested_crops": [
+              "Maize",        
+              "Carrots"       
+            ]
+          },
+          {
+            "name": "Ramotshere Moiloa",
+            "climate": {
+              "average_temperature": "21.0°C",
+              "average_rainfall": "580 mm",
+              "humidity": "66%"
+            },
+            "suggested_crops": [
+              "Potatoes",     
+              "Pumpkins"    
+            ]
+          },
+          {
+            "name": "Ratlou",
+            "climate": {
+              "average_temperature": "20.0°C",
+              "average_rainfall": "570 mm",
+              "humidity": "65%"
+            },
+            "suggested_crops": [
+              "Maize",        
+              "Beetroot"     
+            ]
+          },
+          {
+            "name": "Rustenburg",
+            "climate": {
+              "average_temperature": "21.5°C",
+              "average_rainfall": "550 mm",
+              "humidity": "68%"
+            },
+            "suggested_crops": [
+              "Sweet Potatoes", 
+              "Cabbage"        
+            ]
+          },
+          {
+            "name": "Tswaing",
+            "climate": {
+              "average_temperature": "19.8°C",
+              "average_rainfall": "590 mm",
+              "humidity": "63%"
+            },
+            "suggested_crops": [
+              "Maize",       
+              "Squash"        
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

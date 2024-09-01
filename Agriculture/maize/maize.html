@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All About Maize</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.6.0/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>All About Maize</h1>
+        <p>Discover everything you need to know about maize: its history, health benefits, how to grow it, and some delicious recipes!</p>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <h2>Introduction to Maize</h2>
+            <img src="images/maize.jpg" alt="Maize">
+            <p>Maize, also known as corn, is one of the most widely grown crops in the world. Originally domesticated in Mexico, maize has become a staple food in many cultures, used in a variety of forms from cornmeal to popcorn.</p>
+        </section>
+
+        <section id="benefits">
+            <h2>Health Benefits</h2>
+            <img src="images/cornbenefits.jpg" alt="Health Benefits of Maize">
+            <ul>
+                <li>Rich in Nutrients: Maize is a good source of vitamins A, B, E, and many minerals including iron and magnesium.</li>
+                <li>Energy Booster: It is high in carbohydrates, providing energy for daily activities.</li>
+                <li>Supports Eye Health: The high levels of beta-carotene in maize help maintain good vision.</li>
+                <li>Promotes Digestion: The fiber in maize aids in digestive health and helps prevent constipation.</li>
+            </ul>
+        </section>
+
+        <section id="growing">
+            <h2>How to Grow Maize</h2>
+            <img src="images/growingmaize.jpg" alt="Growing Maize">
+            <p>Growing maize is relatively simple and rewarding. Here are some basic steps:</p>
+            <ul>
+                <li><strong>Climate:</strong> Maize grows best in warm weather with plenty of sunlight.</li>
+                <li><strong>Soil:</strong> Use well-draining soil that is rich in organic matter.</li>
+                <li><strong>Watering:</strong> Water maize regularly, especially during the flowering and ear development stages.</li>
+                <li><strong>Fertilizing:</strong> Apply a balanced fertilizer to ensure healthy growth.</li>
+                <li><strong>Harvesting:</strong> Harvest maize when the kernels are fully developed and the husks are dry.</li>
+            </ul>
+        </section>
+
+        <section id="recipes">
+            <h2>Delicious Maize Recipes</h2>
+            <img src="images/recipes.jpg" alt="Maize Recipes">
+            <p>Maize can be used in a variety of dishes. Here are a few recipes to try:</p>
+            <ol>
+                <li><strong>Cornbread:</strong> A classic dish made with cornmeal, perfect as a side for soups and stews.</li>
+                <li><strong>Grilled Corn:</strong> Simple and delicious, grilled corn on the cob is a summer favorite.</li>
+                <li><strong>Corn Chowder:</strong> A creamy soup made with sweet corn, potatoes, and bacon.</li>
+            </ol>
+        </section>
+
+        <section id="fun-facts">
+            <h2>Fun Facts About Maize</h2>
+            <ul>
+                <li>Maize was first domesticated over 9,000 years ago in what is now Mexico.</li>
+                <li>There are more than 50 varieties of maize, each with unique colors and flavors.</li>
+                <li>Maize is used in many products, including ethanol, corn syrup, and biodegradable plastics.</li>
+                <li>The word "maize" comes from the Taino word "mahiz," which means "source of life."</li>
+            </ul>
+        </section>
+
+        <!-- Button to trigger PDF download -->
+        <button id="downloadPdf">Download as PDF</button>
+        <button onclick="location.href='../quiz/quiz.html'" id="quiz">Take a quiz</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 All About Maize. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript file to handle PDF generation -->
+    <script src="scripts.js"></script>
+</body>
+</html>

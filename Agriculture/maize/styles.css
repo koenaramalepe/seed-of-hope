@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ffff;
+}
+
+header {
+    background-color: #22b600;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+    background-color:#d2f2d4;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button#downloadPdf {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+button#quiz {
+    border-radius: 5px;
+    background-color: #14d802;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button#downloadPdf:hover {
+    background-color: #d32f2f;
+}
