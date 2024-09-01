@@ -41,6 +41,21 @@
             background: #F8FAF5;
             margin: 0 auto 20px;
         }
+        .download-button {
+            display: inline-block;
+            margin-top: 40px; /* Increased margin-top to push the button lower */
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #567d46;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .download-button:hover {
+            background-color: #4a6b3a;
+        }
     </style>
 </head>
 <body>
@@ -55,6 +70,8 @@
         </div>
         <h1>Success</h1>
         <p>Thank you for your generous donation.<br/> Your contribution helps make a difference.</p>
+        <!-- Download Certificate Button -->
+        <a href="/Donor/certificate.pdf" class="download-button" download>Download Your Certificate</a>
     </div>
 
     <!-- Include Lottie Player JavaScript -->
